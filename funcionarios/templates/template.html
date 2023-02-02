@@ -1,0 +1,15 @@
+{# importa o arquivo de estilização #}
+{% load static %}
+<html>
+<head>
+    {# linka o arquivo de estilização da página #}
+    <link rel="stylesheet" href="{% static 'css_global.css' %}">
+</head>
+<!DOCTYPE html>
+
+<body>
+
+<h1 class="desemprego">E ai {{ mymembers.first.primeiroNome }}, como vai o desemprego?</h1>
+
+</body>
+</html>

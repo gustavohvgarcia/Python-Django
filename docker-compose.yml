@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+
+  web:
+    image: python:3.8
+    build: .
+    volumes:
+      - .:/webapp
+    ports:
+      - "8000:8000"

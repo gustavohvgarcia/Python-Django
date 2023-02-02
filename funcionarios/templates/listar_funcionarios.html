@@ -1,0 +1,17 @@
+{%  extends "index.html" %}
+
+{% block title %}
+    Minha Empresa LTDA. - Quadro de funcionários
+{%  endblock %}
+
+{% block content %}
+
+    <div class="mycard">
+    <h1>Funcionários</h1>
+    <ul>
+      {% for x in mymembers %}
+          <li onclick="window.location = 'detalhes/{{ x.id }}'">{{ x.primeiroNome }} {{ x.ultimoNome }}</li>
+       {% endfor %}
+    </ul>
+    </div>
+{% endblock %}

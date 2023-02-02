@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+{% block title %}
+    Detalhes sobre {{ mymember.primeiroNome }} {{ mymember.ultimoNome }}
+
+{% endblock %}
+
+{% block content %}
+    <div class="mycard">
+        <h1>{{ mymember.primeiroNome }} {{ mymember.ultimoNome }}</h1>
+        <p><b>Cargo</b>: {{ mymember.cargo }}</p>
+        <p><b>Data de Nascimento</b>: {{ mymember.dataNascimento }}</p>
+        <p><b>Data admissão</b>: {{ mymember.dataAdmissao }}</p>
+        <p><b>Telefone</b>: {{ mymember.telefone }}</p>
+        <p><b>E-mail</b>: {{ mymember.email }}</p>
+        <hr>
+        <input type="button" value="Voltar" onclick="history.back()">
+
+    </div>
+{% endblock %}
